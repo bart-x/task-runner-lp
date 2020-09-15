@@ -1,0 +1,238 @@
+$color-one: #FFD700;   /* yellow */
+$color-two: #F8F8FF;   /* white */
+$color-three: #000000; /* black */
+$color-four: #4C4D4F;  /* darkblue */
+
+$transition: all 1s;
+
+$font-header: 'Oswald', sans-serif;
+$font-family: 'Liu Jian Mao Cao', cursive;
+
+
+/* BODY */
+
+body { 
+    background-color: $color-two;
+}
+
+/* NAVBAR */
+
+
+.navbar {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+}
+
+.navbar ul { 
+    margin-left: 150px; 
+}
+.navbar h1 {
+    font-family: $font-family;
+    color: $color-one;
+    margin-left: 100px;
+}
+.navbar li {
+    display: inline;
+    margin: 10px;
+    
+    a {
+        color: $color-two;
+    }
+}
+
+
+/* SPLASH */
+
+.splash {
+    background-image: url("https://cdn.wallpapersafari.com/57/83/JUDXTQ.jpg"); 
+    background-size: cover;
+    min-height: 500px;
+    display: flex;   /* flex wazne */
+    justify-content: center;
+
+}
+
+
+.splash-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    //justify-content: center;
+    //margin-left: 350px;
+    //margin-top: 100px;
+    //max-width: 70%;
+}
+
+.splash h1 {
+    font-family: $font-family; 
+    color: $color-two;
+    margin-left: 100px;
+}
+.splash h2 {
+    font-family: $font-header; 
+    color: $color-two;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.splash a {
+    color: $color-two; 
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; 
+    border-width: 2px;    /* przycisk bedzie mial dwupikselowa ciagla ramka */
+    border-style: solid;
+    background-color: $color-one;
+    background-position: 100% 0;  /* Teraz schowamy nasz gradient, 
+                    a nastepnie dodamy kod, ktory sprawi, ze po najechaniu kursorem na 
+                                przycisk gradient wypelni go w calosci */
+    background-size: 300%;
+}
+.btn:hover {
+    background-position: 0 100%;
+    transition: $transition;
+    
+}
+
+
+/* OUR SERVICES */
+
+
+.services {
+    background-color: $color-two;
+    text-align: center;
+    
+    h1 {
+        font-family: $font-header; 
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    h2 {
+        font-family: $font-family; 
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    i {
+        font-size: 3.5em;
+        display: inline-block;
+        color: $color-one;
+    }
+}
+
+
+/* PORTFOLIO */
+
+
+.portfolio {
+    background-color: #e9ecef;
+    text-align: center; 
+    padding-top: 100px;
+    
+    h1 {
+        font-family: $font-header; 
+        margin: auto;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: $font-family; 
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-align: center;  
+    }
+    .col {
+        padding: 20px;  
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-family: $font-header; 
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }    
+    h4 {
+        font-family: $font-family; 
+        text-align: center; 
+        font-size: 15px;
+        margin: 5px;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: $color-two;
+    text-align: center; 
+    padding-top: 100px;
+    
+    h1 {
+        font-size: 13px;
+        padding-top: 15px;
+    }
+    
+    li {
+        list-style-type: none;   
+        display: inline-block;
+       .fab {
+            font-size: 42px;
+            color: $color-three;
+            padding: 5px;
+       }
+    }
+    
+    
+}
+
+.col {
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
